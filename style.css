@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    background: linear-gradient(90deg, rgba(121, 75, 120, 1) 0%, rgba(97, 39, 148, 1) 35%, rgba(86, 189, 210, 1) 100%);
+    padding: 20px;
+    position: relative;
+  }
+  
+  #container {
+    margin: 0 auto;
+    width: 600px;
+    padding: 10px 40px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  
+  #formulario button {
+    margin-bottom: 20px;
+  }
+  
+ #formulario-adicionar {
+    display: none;
+  }
+  
+#formulario-adicionar{
+    display: block;
+  }
+  
+  
+  #formulario input,
+  #pesquisar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #formulario button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  #tipoContato, #editar-tipoContato {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  

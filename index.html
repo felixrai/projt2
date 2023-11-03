@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="section">
+        <div id="container">
+    <h1><center>Agenda de Contatos</center></h1>
+    
+    <div id="contato-form">
+        
+        <h2>Novo Contato</h2>
+        <div id="formulario">
+        <input type="text" id="nome" placeholder="Nome"> 
+        <input type="text" id="telefone" placeholder="Telefone"> 
+        <input type="text" id="email" placeholder="Email">
+        <select id="tipoContato">
+            <option value="Contato">Contato</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Amigo">Amigo</option>
+            <option value="ColegaDeTrabalho">Colega de Trabalho</option>
+        </select>
+        <input type="text" id="empresa" placeholder="Empresa" style="display:none;">
+        <input type="text" id="dataAniversario" placeholder="Data de Aniversário" style="display:none;">
+        <input type="text" id="departamento" placeholder="Departamento" style="display:none;">
+        <button onclick="adicionarContato()">Adicionar Contato</button> 
+    </div>
+    </div>
+    
+    <div id="contatos-lista">
+        <h2>Lista de Contatos</h2>
+        <p>Clique no contato para editar</p>
+        <ul id="lista">
+        </ul>
+    </div>
+
+    <div id="editar-form" style="display:none;">
+        <h2>Editar Contato</h2>
+        <div id="formulario">
+        <input type="text" id="editar-nome" placeholder="Nome">
+        <input type="text" id="editar-telefone" placeholder="Telefone">
+        <input type="text" id="editar-email" placeholder="Email">
+       
+        <select id="editar-tipoContato"> 
+            <option value="Contato">Contato</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Amigo">Amigo</option>
+            <option value="ColegaDeTrabalho">Colega de Trabalho</option>
+        </select>
+        <input type="text" id="editar-empresa" placeholder="Empresa" style="display:none;">
+        <input type="text" id="editar-dataAniversario" placeholder="Data de Aniversário" style="display:none;">
+        <input type="text" id="editar-departamento" placeholder="Departamento" style="display:none;">
+        <button onclick="confirmarEdicao()">Confirmar Edição</button>
+        <button onclick="cancelarEdicao()">Cancelar</button>
+        <button onclick="excluirContato()">Excluir Contato</button> 
+    </div>
+</div>
+
+    <div id="pesquisar-form">
+        <div id="formulario">
+        <h2>Pesquisar Contatos</h2>
+        <input type="text" id="pesquisar-nome" placeholder="Nome">
+        <button onclick="pesquisarContatos()">Pesquisar</button>
+        </div>
+    </div>
+</div>
+    </section>
+    <script src="prj.js"></script>
+</body>
+</html>
